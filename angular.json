@@ -70,7 +70,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Biology:build"
+            "browserTarget": "Biology:build",
+            "port": 8888
           },
           "configurations": {
             "production": {
