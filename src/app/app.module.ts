@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routes';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 import { NgZorroAntdModule, NZ_I18N, zh_CN } from 'ng-zorro-antd';
-/** 配置 angular i18n **/
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 registerLocaleData(zh);
@@ -12,7 +13,9 @@ registerLocaleData(zh);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     routing,

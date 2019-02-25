@@ -1,0 +1,61 @@
+@import "../../assets/css/config";
+*{
+  margin: 0;
+  padding:0;
+}
+header {
+  font-size: 18px;
+  border-bottom:solid 5px @active-blue;
+  .header-wrap {
+    position:relative;
+    width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    img {
+      display: block;
+      width: 250px;
+      height: 80px;
+    }
+    nav {
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 400px;
+      margin-top: -20px;
+      ul {
+        list-style: none;
+        li {
+          position: relative;
+          float: left;
+          padding: 0 15px;
+          height: 40px;
+          line-height: 40px;
+          &:hover {
+            cursor: pointer;
+            color: @hover-blue;
+          }
+          ul {
+            position: absolute;
+            top:40px;
+            left:10px;
+            z-index: 2;
+            font-size: 12px;
+            list-style: none;
+            width: 80px;
+            background: @default-white;
+            border-radius: 3px;
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,.2);
+            li {
+              height: 30px;
+              line-height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: @active-blue;
+}
