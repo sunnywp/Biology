@@ -1,8 +1,4 @@
 @import "../../assets/css/config";
-*{
-  margin: 0;
-  padding:0;
-}
 header {
   font-size: 18px;
   border-bottom:solid 5px @active-blue;
@@ -30,12 +26,13 @@ header {
           padding: 0 15px;
           height: 40px;
           line-height: 40px;
-          &:hover {
+          span:hover {
             cursor: pointer;
             color: @hover-blue;
           }
           ul {
             position: absolute;
+            visibility: hidden;
             top:40px;
             left:10px;
             z-index: 2;
@@ -48,6 +45,10 @@ header {
             li {
               height: 30px;
               line-height: 30px;
+              &:hover {
+                cursor: pointer;
+                color: @hover-blue;
+              }
             }
           }
         }
@@ -58,4 +59,10 @@ header {
 
 .active {
   color: @active-blue;
+}
+
+.open {
+  ul {
+    visibility: visible !important;
+  }
 }

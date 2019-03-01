@@ -9,6 +9,7 @@ declare var Swiper: any;
 })
 
 export class HomeComponent implements OnInit {
+  productList:any[] = [];
   constructor() {
   }
 
