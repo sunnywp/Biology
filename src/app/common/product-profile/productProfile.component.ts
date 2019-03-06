@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'product-profile',
@@ -7,6 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class ProductProfileComponent {
-
+  @Input() imageUrl: string = '';
+  @Input() content: string = '';
 
 }

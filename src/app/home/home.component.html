@@ -18,16 +18,9 @@
   <section class="product">
     <h1>产品中心</h1>
     <div class="wrap">
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
-      <product-profile></product-profile>
+      <ng-container *ngFor="let product of productList">
+        <product-profile [content]="product.content" [imageUrl]="product.url"></product-profile>
+      </ng-container>
     </div>
   </section>
 </div>
