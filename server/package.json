@@ -1,0 +1,11 @@
+{
+  "name": "biology",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "koa": "^2.7.0"
+  }
+}
