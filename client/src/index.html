@@ -8,8 +8,45 @@
   <meta name="keyword" content="网易考拉,海外购,代购">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style type="text/css">
+    .spin {
+      display: inline-block;
+      position: relative;
+      width: 32px;
+      height: 32px;
+    }
+    .spin i {
+      display: block;
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      opacity: 0.3;
+      border-radius: 100%;
+      background-color: #1890ff;
+    }
+    .spin i:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    .spin i:nth-child(2) {
+      top: 0;
+      right: 0;
+    }
+    .spin i:nth-child(3) {
+      bottom: 0;
+      left: 0;
+    }
+    .spin i:nth-child(4) {
+      bottom: 0;
+      right: 0;
+    }
+  </style>
 </head>
 <body>
-  <app-root></app-root>
+  <app-root>
+    <span class="spin">
+      <i></i><i></i><i></i><i></i>
+    </span>
+  </app-root>
 </body>
 </html>
