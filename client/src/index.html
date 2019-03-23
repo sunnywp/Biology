@@ -9,44 +9,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style type="text/css">
+    .spin-wrap {
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+    }
     .spin {
       display: inline-block;
-      position: relative;
-      width: 32px;
-      height: 32px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: solid 5px #0099ff;
+      border-bottom-color: #e6e6e6;
+      animation:myloading 1.5s infinite;
     }
-    .spin i {
-      display: block;
-      position: absolute;
-      width: 14px;
-      height: 14px;
-      opacity: 0.3;
-      border-radius: 100%;
-      background-color: #1890ff;
-    }
-    .spin i:nth-child(1) {
-      top: 0;
-      left: 0;
-    }
-    .spin i:nth-child(2) {
-      top: 0;
-      right: 0;
-    }
-    .spin i:nth-child(3) {
-      bottom: 0;
-      left: 0;
-    }
-    .spin i:nth-child(4) {
-      bottom: 0;
-      right: 0;
+
+    @keyframes myloading
+    {
+      0%   {transform: rotate(0deg);}
+      10%  {transform: rotate(36deg);}
+      20%  {transform: rotate(72deg);}
+      30% {transform: rotate(108deg);}
+      40% {transform: rotate(144deg);}
+      50% {transform: rotate(180deg);}
+      60%   {transform: rotate(216deg);}
+      70%  {transform: rotate(252deg);}
+      80%  {transform: rotate(288deg);}
+      90% {transform: rotate(324deg);}
+      100% {transform: rotate(360deg);}
     }
   </style>
 </head>
 <body>
   <app-root>
-    <span class="spin">
-      <i></i><i></i><i></i><i></i>
-    </span>
+  <div class="spin-wrap">
+    <div class="spin">
+    </div>
+  </div>
   </app-root>
 </body>
 </html>
