@@ -15,22 +15,19 @@
     height: 100%;
     opacity: 0 ;
     background: rgba(0,0,0);
+    &:hover {
+      opacity: 0.5 !important;
+      cursor: pointer;
+    }
   }
-
-  .open {
-    opacity: 0.5 !important;
-    cursor: pointer;
-  }
-
-  //&:hover {
-  //  background: rgba(0,0,0,0.5);
-  //  cursor: pointer;
-  //}
 
   img {
     display: inline-block;
     width: 100%;
     height: auto;
+    &:hover {
+      transform: scale(1.1,1.1);
+    }
   }
 
   h2 {
